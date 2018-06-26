@@ -1,9 +1,9 @@
-package ictgradschool.industry.lab15.ex01;
+package ictgradschool.industry.lab_designpatterni.ex01;
 
 /**
- * Abstract superclass to represent the general concept of a ictgradschool.industry.lab15.ex01.Shape. This class
- * defines state common to all special kinds of ictgradschool.industry.lab15.ex01.Shape instances and implements
- * a common movement algorithm. ictgradschool.industry.lab15.ex01.Shape subclasses must override method paint()
+ * Abstract superclass to represent the general concept of a ictgradschool.industry.lab_designpatterni.ex01.Shape. This class
+ * defines state common to all special kinds of ictgradschool.industry.lab_designpatterni.ex01.Shape instances and implements
+ * a common movement algorithm. ictgradschool.industry.lab_designpatterni.ex01.Shape subclasses must override method paint()
  * to handle shape-specific painting.
  * 
  * @author Ian Warren
@@ -39,29 +39,29 @@ public abstract class Shape {
 	// ===
 
 	/**
-	 * Creates a ictgradschool.industry.lab15.ex01.Shape object with default values for instance variables.
+	 * Creates a ictgradschool.industry.lab_designpatterni.ex01.Shape object with default values for instance variables.
 	 */
 	public Shape() {
 		this(DEFAULT_X_POS, DEFAULT_Y_POS, DEFAULT_DELTA_X, DEFAULT_DELTA_Y, DEFAULT_WIDTH, DEFAULT_HEIGHT);
 	}
 	
 	/**
-	 * Creates a ictgradschool.industry.lab15.ex01.Shape object with a specified x and y position.
+	 * Creates a ictgradschool.industry.lab_designpatterni.ex01.Shape object with a specified x and y position.
 	 */
 	public Shape(int x, int y) {
 		this(x, y, DEFAULT_DELTA_X, DEFAULT_DELTA_Y, DEFAULT_WIDTH, DEFAULT_HEIGHT);
 	}
 	
 	/**
-	 * Creates a ictgradschool.industry.lab15.ex01.Shape instance with specified x, y, deltaX and deltaY values.
-	 * The ictgradschool.industry.lab15.ex01.Shape object is created with a default width and height.
+	 * Creates a ictgradschool.industry.lab_designpatterni.ex01.Shape instance with specified x, y, deltaX and deltaY values.
+	 * The ictgradschool.industry.lab_designpatterni.ex01.Shape object is created with a default width and height.
 	 */
 	public Shape(int x, int y, int deltaX, int deltaY) {
 		this(x, y, deltaX, deltaY, DEFAULT_WIDTH, DEFAULT_HEIGHT);
 	}
 
 	/**
-	 * Creates a ictgradschool.industry.lab15.ex01.Shape instance with specified x, y, deltaX, deltaY, width and
+	 * Creates a ictgradschool.industry.lab_designpatterni.ex01.Shape instance with specified x, y, deltaX, deltaY, width and
 	 * height values.
 	 */
 	public Shape(int x, int y, int deltaX, int deltaY, int width, int height) {
@@ -74,8 +74,8 @@ public abstract class Shape {
 	}
 	
 	/**
-	 * Moves this ictgradschool.industry.lab15.ex01.Shape object within the specified bounds. On hitting a
-	 * boundary the ictgradschool.industry.lab15.ex01.Shape instance bounces off and back into the two-
+	 * Moves this ictgradschool.industry.lab_designpatterni.ex01.Shape object within the specified bounds. On hitting a
+	 * boundary the ictgradschool.industry.lab_designpatterni.ex01.Shape instance bounces off and back into the two-
 	 * dimensional world. 
 	 * @param width width of two-dimensional world.
 	 * @param height height of two-dimensional world.
@@ -107,47 +107,47 @@ public abstract class Shape {
 	/**
 	 * Method to be implemented by concrete subclasses to handle subclass
 	 * specific painting.
-	 * @param painter the ictgradschool.industry.lab15.ex01.Painter object used for drawing.
+	 * @param painter the ictgradschool.industry.lab_designpatterni.ex01.Painter object used for drawing.
 	 */
 	public abstract void paint(Painter painter);
 
 	/**
-	 * Returns this ictgradschool.industry.lab15.ex01.Shape object's x position.
+	 * Returns this ictgradschool.industry.lab_designpatterni.ex01.Shape object's x position.
 	 */
 	public int getX() {
 		return fX;
 	}
 	
 	/**
-	 * Returns this ictgradschool.industry.lab15.ex01.Shape object's y position.
+	 * Returns this ictgradschool.industry.lab_designpatterni.ex01.Shape object's y position.
 	 */
 	public int getY() {
 		return fY;
 	}
 	
 	/**
-	 * Returns this ictgradschool.industry.lab15.ex01.Shape object's speed and direction.
+	 * Returns this ictgradschool.industry.lab_designpatterni.ex01.Shape object's speed and direction.
 	 */
 	public int getDeltaX() {
 		return fDeltaX;
 	}
 	
 	/**
-	 * Returns this ictgradschool.industry.lab15.ex01.Shape object's speed and direction.
+	 * Returns this ictgradschool.industry.lab_designpatterni.ex01.Shape object's speed and direction.
 	 */
 	public int getDeltaY() {
 		return fDeltaY;
 	}
 	
 	/**
-	 * Returns this ictgradschool.industry.lab15.ex01.Shape's width.
+	 * Returns this ictgradschool.industry.lab_designpatterni.ex01.Shape's width.
 	 */
 	public int getWidth() {
 		return fWidth;
 	}
 	
 	/**
-	 * Returns this ictgradschool.industry.lab15.ex01.Shape's height.
+	 * Returns this ictgradschool.industry.lab_designpatterni.ex01.Shape's height.
 	 */
 	public int getHeight() {
 		return fHeight;

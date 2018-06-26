@@ -1,13 +1,13 @@
-package ictgradschool.industry.lab15.ex02;
+package ictgradschool.industry.lab_designpatterni.ex02;
 
-import ictgradschool.industry.lab15.ex01.DynamicRectangleShape;
-import ictgradschool.industry.lab15.ex01.GemShape;
-import ictgradschool.industry.lab15.ex01.GraphicsPainter;
-import ictgradschool.industry.lab15.ex01.ImageShape;
-import ictgradschool.industry.lab15.ex01.NestingShape;
-import ictgradschool.industry.lab15.ex01.OvalShape;
-import ictgradschool.industry.lab15.ex01.Painter;
-import ictgradschool.industry.lab15.ex01.RectangleShape;
+import ictgradschool.industry.lab_designpatterni.ex01.DynamicRectangleShape;
+import ictgradschool.industry.lab_designpatterni.ex01.GemShape;
+import ictgradschool.industry.lab_designpatterni.ex01.GraphicsPainter;
+import ictgradschool.industry.lab_designpatterni.ex01.ImageShape;
+import ictgradschool.industry.lab_designpatterni.ex01.NestingShape;
+import ictgradschool.industry.lab_designpatterni.ex01.OvalShape;
+import ictgradschool.industry.lab_designpatterni.ex01.Painter;
+import ictgradschool.industry.lab_designpatterni.ex01.RectangleShape;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -23,13 +23,13 @@ import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 
 /**
- * Simple GUI program to show an animation of shapes. Class ictgradschool.industry.lab15.ex01.AnimationViewer is a
- * special kind of GUI component (JPanel), and as such an instance of ictgradschool.industry.lab15.ex01.AnimationViewer
+ * Simple GUI program to show an animation of shapes. Class ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer is a
+ * special kind of GUI component (JPanel), and as such an instance of ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer
  * can be added to a JFrame object. A JFrame object is a window that can be closed, minimised, and maximised. The state
- * of a ictgradschool.industry.lab15.ex01.AnimationViewer object comprises a list of Shapes and a Timer object. An
- * ictgradschool.industry.lab15.ex01.AnimationViewer instance subscribes to events that are published by a Timer. In
- * response to receiving an event from the Timer, the ictgradschool.industry.lab15.ex01.AnimationViewer iterates through
- * a list of Shapes requesting that each ictgradschool.industry.lab15.ex01.Shape paints and moves itself.
+ * of a ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer object comprises a list of Shapes and a Timer object. An
+ * ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer instance subscribes to events that are published by a Timer. In
+ * response to receiving an event from the Timer, the ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer iterates through
+ * a list of Shapes requesting that each ictgradschool.industry.lab_designpatterni.ex01.Shape paints and moves itself.
  * 
  * @author Ian Warren
  */
@@ -42,8 +42,8 @@ public class Ex02AnimationViewer extends JPanel implements ActionListener {
 	private Timer timer = new Timer(DELAY, this);
 
 	/**
-	 * Creates an ictgradschool.industry.lab15.ex01.AnimationViewer instance with a list of
-	 * ictgradschool.industry.lab15.ex01.Shape objects and starts the animation.
+	 * Creates an ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer instance with a list of
+	 * ictgradschool.industry.lab_designpatterni.ex01.Shape objects and starts the animation.
 	 */
 	public Ex02AnimationViewer(JTree treeView) {
 
@@ -80,18 +80,18 @@ public class Ex02AnimationViewer extends JPanel implements ActionListener {
 	}
 
 	/**
-	 * Called by the Swing framework whenever this ictgradschool.industry.lab15.ex01.AnimationViewer object should be
+	 * Called by the Swing framework whenever this ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer object should be
 	 * repainted. This can happen, for example, after an explicit repaint() call or after the window that contains this
-	 * ictgradschool.industry.lab15.ex01.AnimationViewer object has been exposed after being hidden by another window.
+	 * ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer object has been exposed after being hidden by another window.
 	 * 
 	 */
 	public void paintComponent(Graphics g) {
 		// Call inherited implementation to handle background painting.
 		super.paintComponent(g);
 
-		// Create a ictgradschool.industry.lab15.ex01.GraphicsPainter that ictgradschool.industry.lab15.ex01.Shape
+		// Create a ictgradschool.industry.lab_designpatterni.ex01.GraphicsPainter that ictgradschool.industry.lab_designpatterni.ex01.Shape
 		// objects will use for drawing.
-		// The ictgradschool.industry.lab15.ex01.GraphicsPainter delegates painting to a basic Graphics object.
+		// The ictgradschool.industry.lab_designpatterni.ex01.GraphicsPainter delegates painting to a basic Graphics object.
 		Painter painter = new GraphicsPainter(g);
 
 		// Draw all shapes
@@ -100,7 +100,7 @@ public class Ex02AnimationViewer extends JPanel implements ActionListener {
 	}
 
 	/**
-	 * Notifies this ictgradschool.industry.lab15.ex01.AnimationViewer object of an ActionEvent.
+	 * Notifies this ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer object of an ActionEvent.
 	 */
 	public void actionPerformed(ActionEvent e) {
 
@@ -116,7 +116,7 @@ public class Ex02AnimationViewer extends JPanel implements ActionListener {
 	}
 
 	/**
-	 * Main program method to create an ictgradschool.industry.lab15.ex01.AnimationViewer object and display this within
+	 * Main program method to create an ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer object and display this within
 	 * a JFrame window.
 	 */
 	public static void main(String[] args) {

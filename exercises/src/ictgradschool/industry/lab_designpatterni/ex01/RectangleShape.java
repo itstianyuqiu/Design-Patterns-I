@@ -1,4 +1,4 @@
-package ictgradschool.industry.lab15.ex01;
+package ictgradschool.industry.lab_designpatterni.ex01;
 
 /**
  * Class to represent a simple rectangle.
@@ -7,7 +7,7 @@ package ictgradschool.industry.lab15.ex01;
  */
 public class RectangleShape extends Shape {
 	/**
-	 * Default constructor that creates a ictgradschool.industry.lab15.ex01.RectangleShape instance whose instance
+	 * Default constructor that creates a ictgradschool.industry.lab_designpatterni.ex01.RectangleShape instance whose instance
 	 * variables are set to default values.
 	 */
 	public RectangleShape() {
@@ -15,7 +15,7 @@ public class RectangleShape extends Shape {
 	}
 	
 	/**
-	 * Creates a ictgradschool.industry.lab15.ex01.RectangleShape instance with specified values for instance
+	 * Creates a ictgradschool.industry.lab_designpatterni.ex01.RectangleShape instance with specified values for instance
 	 * variables.
 	 * @param x x position.
 	 * @param y y position.
@@ -27,7 +27,7 @@ public class RectangleShape extends Shape {
 	}
 	
 	/**
-	 * Creates a ictgradschool.industry.lab15.ex01.RectangleShape instance with specified values for instance
+	 * Creates a ictgradschool.industry.lab_designpatterni.ex01.RectangleShape instance with specified values for instance
 	 * variables.
 	 * @param x x position.
 	 * @param y y position.
@@ -43,7 +43,7 @@ public class RectangleShape extends Shape {
 	}
 	
 	/**
-	 * Paints this ictgradschool.industry.lab15.ex01.RectangleShape object using the supplied ictgradschool.industry.lab15.ex01.Painter object.
+	 * Paints this ictgradschool.industry.lab_designpatterni.ex01.RectangleShape object using the supplied ictgradschool.industry.lab_designpatterni.ex01.Painter object.
 	 */
 	@Override
 	public void paint(Painter painter) {

@@ -1,4 +1,4 @@
-package ictgradschool.industry.lab15.ex01;
+package ictgradschool.industry.lab_designpatterni.ex01;
 
 import org.junit.Before;
 import org.junit.Test;

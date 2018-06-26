@@ -1,4 +1,4 @@
-package ictgradschool.industry.lab15.ex01;
+package ictgradschool.industry.lab_designpatterni.ex01;
 
 import java.awt.*;
 
@@ -15,7 +15,7 @@ public class DynamicRectangleShape extends RectangleShape {
     private Color color;
 
     /**
-     * Default constructor that creates a ictgradschool.industry.lab15.ex01.DynamicRectangleShape instance whose instance
+     * Default constructor that creates a ictgradschool.industry.lab_designpatterni.ex01.DynamicRectangleShape instance whose instance
      * variables are set to default values.
      */
     public DynamicRectangleShape() {
@@ -24,7 +24,7 @@ public class DynamicRectangleShape extends RectangleShape {
     }
 
     /**
-     * Creates a ictgradschool.industry.lab15.ex01.DynamicRectangleShape instance with specified values for instance
+     * Creates a ictgradschool.industry.lab_designpatterni.ex01.DynamicRectangleShape instance with specified values for instance
      * variables.
      *
      * @param x      x position.
@@ -37,7 +37,7 @@ public class DynamicRectangleShape extends RectangleShape {
     }
 
     /**
-     * Creates a ictgradschool.industry.lab15.ex01.DynamicRectangleShape instance with specified values for instance
+     * Creates a ictgradschool.industry.lab_designpatterni.ex01.DynamicRectangleShape instance with specified values for instance
      * variables.
      *
      * @param x      x position.
@@ -54,7 +54,7 @@ public class DynamicRectangleShape extends RectangleShape {
     }
 
     /**
-     * Creates a ictgradschool.industry.lab15.ex01.DynamicRectangleShape instance with specified values for instance
+     * Creates a ictgradschool.industry.lab_designpatterni.ex01.DynamicRectangleShape instance with specified values for instance
      * variables.
      *
      * @param x      x position.
@@ -96,7 +96,7 @@ public class DynamicRectangleShape extends RectangleShape {
     }
 
     /**
-     * Paints this ictgradschool.industry.lab15.ex01.RectangleShape object using the supplied ictgradschool.industry.lab15.ex01.Painter object.
+     * Paints this ictgradschool.industry.lab_designpatterni.ex01.RectangleShape object using the supplied ictgradschool.industry.lab_designpatterni.ex01.Painter object.
      */
     @Override
     public void paint(Painter painter) {

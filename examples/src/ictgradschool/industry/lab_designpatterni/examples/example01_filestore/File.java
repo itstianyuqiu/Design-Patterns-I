@@ -1,4 +1,4 @@
-package ictgradschool.industry.lab15.examples.example01_filestore;
+package ictgradschool.industry.lab_designpatterni.examples.example01_filestore;
 
 import java.util.List;
 import java.util.ArrayList;

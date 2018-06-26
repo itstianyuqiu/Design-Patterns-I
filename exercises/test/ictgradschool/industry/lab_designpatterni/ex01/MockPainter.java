@@ -1,15 +1,13 @@
-package ictgradschool.industry.lab15.ex01;
-
-import ictgradschool.industry.lab15.ex01.Painter;
+package ictgradschool.industry.lab_designpatterni.ex01;
 
 import java.awt.*;
 import java.util.Arrays;
 
 /**
- * Implementation of the ictgradschool.industry.lab15.ex01.Painter interface that does not actually do any
- * painting. A ictgradschool.industry.lab15.ex01.MockPainter implementation responds to ictgradschool.industry.lab15.ex01.Painter requests by
- * logging the request in a buffer. The contents of a ictgradschool.industry.lab15.ex01.MockPainter object's
- * log can be retrieved by a call to toString() on the ictgradschool.industry.lab15.ex01.MockPainter.
+ * Implementation of the ictgradschool.industry.lab_designpatterni.ex01.Painter interface that does not actually do any
+ * painting. A ictgradschool.industry.lab_designpatterni.ex01.MockPainter implementation responds to ictgradschool.industry.lab_designpatterni.ex01.Painter requests by
+ * logging the request in a buffer. The contents of a ictgradschool.industry.lab_designpatterni.ex01.MockPainter object's
+ * log can be retrieved by a call to toString() on the ictgradschool.industry.lab_designpatterni.ex01.MockPainter.
  * 
  * @author Ian Warren
  */
@@ -21,7 +19,7 @@ public class MockPainter implements Painter {
 	private Color color = Color.black;
 
 	/**
-	 * Returns the contents of this ictgradschool.industry.lab15.ex01.MockPainter's log.
+	 * Returns the contents of this ictgradschool.industry.lab_designpatterni.ex01.MockPainter's log.
 	 */
     @Override
 	public String toString() {

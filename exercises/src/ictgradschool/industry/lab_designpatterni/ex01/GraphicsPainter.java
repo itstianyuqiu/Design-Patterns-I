@@ -1,9 +1,9 @@
-package ictgradschool.industry.lab15.ex01;
+package ictgradschool.industry.lab_designpatterni.ex01;
 
 import java.awt.*;
 
 /**
- * Implementation of the ictgradschool.industry.lab15.ex01.Painter interface that delegates drawing to a
+ * Implementation of the ictgradschool.industry.lab_designpatterni.ex01.Painter interface that delegates drawing to a
  * java.awt.Graphics object.
  * 
  * @author Ian Warren
@@ -13,7 +13,7 @@ public class GraphicsPainter implements Painter {
 	private Graphics g;
 
 	/**
-	 * Creates a ictgradschool.industry.lab15.ex01.GraphicsPainter object and sets its Graphics delegate.
+	 * Creates a ictgradschool.industry.lab_designpatterni.ex01.GraphicsPainter object and sets its Graphics delegate.
 	 */
 	public GraphicsPainter(Graphics g) {
 		this.g = g;

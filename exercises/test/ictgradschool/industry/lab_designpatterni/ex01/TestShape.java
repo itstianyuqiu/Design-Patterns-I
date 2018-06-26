@@ -1,4 +1,4 @@
-package ictgradschool.industry.lab15.ex01;
+package ictgradschool.industry.lab_designpatterni.ex01;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Test cases to test classes ictgradschool.industry.lab15.ex01.Shape/ictgradschool.industry.lab15.ex01.RectangleShape.
+ * Test cases to test classes ictgradschool.industry.lab_designpatterni.ex01.Shape/ictgradschool.industry.lab_designpatterni.ex01.RectangleShape.
  * 
  * @author Ian Warren
  */

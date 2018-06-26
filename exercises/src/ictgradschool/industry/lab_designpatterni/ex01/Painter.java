@@ -1,4 +1,4 @@
-package ictgradschool.industry.lab15.ex01;
+package ictgradschool.industry.lab_designpatterni.ex01;
 
 import java.awt.*;
 
@@ -27,12 +27,12 @@ public interface Painter {
 	public void drawLine(int x1, int y1, int x2, int y2);
 
 	/**
-	 * Sets the color of this ictgradschool.industry.lab15.ex01.Painter to the given value.
+	 * Sets the color of this ictgradschool.industry.lab_designpatterni.ex01.Painter to the given value.
 	 */
 	public void setColor(Color color);
 
 	/**
-	 * Gets the current color of this ictgradschool.industry.lab15.ex01.Painter.
+	 * Gets the current color of this ictgradschool.industry.lab_designpatterni.ex01.Painter.
 	 */
 	public Color getColor();
 

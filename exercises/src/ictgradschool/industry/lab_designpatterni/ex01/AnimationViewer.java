@@ -1,4 +1,4 @@
-package ictgradschool.industry.lab15.ex01;
+package ictgradschool.industry.lab_designpatterni.ex01;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,14 +10,14 @@ import javax.swing.*;
 
 
 /**
- * Simple GUI program to show an animation of shapes. Class ictgradschool.industry.lab15.ex01.AnimationViewer is
+ * Simple GUI program to show an animation of shapes. Class ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer is
  * a special kind of GUI component (JPanel), and as such an instance of 
- * ictgradschool.industry.lab15.ex01.AnimationViewer can be added to a JFrame object. A JFrame object is a
+ * ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer can be added to a JFrame object. A JFrame object is a
  * window that can be closed, minimised, and maximised. The state of a
- * ictgradschool.industry.lab15.ex01.AnimationViewer object comprises a list of Shapes and a Timer object. An
- * ictgradschool.industry.lab15.ex01.AnimationViewer instance subscribes to events that are published by a Timer.
- * In response to receiving an event from the Timer, the ictgradschool.industry.lab15.ex01.AnimationViewer iterates
- * through a list of Shapes requesting that each ictgradschool.industry.lab15.ex01.Shape paints and moves itself.
+ * ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer object comprises a list of Shapes and a Timer object. An
+ * ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer instance subscribes to events that are published by a Timer.
+ * In response to receiving an event from the Timer, the ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer iterates
+ * through a list of Shapes requesting that each ictgradschool.industry.lab_designpatterni.ex01.Shape paints and moves itself.
  * 
  * @author Ian Warren
  */
@@ -31,7 +31,7 @@ public class AnimationViewer extends JPanel implements ActionListener {
 	private Timer timer = new Timer(DELAY, this);
 
 	/**
-	 * Creates an ictgradschool.industry.lab15.ex01.AnimationViewer instance with a list of ictgradschool.industry.lab15.ex01.Shape objects and
+	 * Creates an ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer instance with a list of ictgradschool.industry.lab_designpatterni.ex01.Shape objects and
 	 * starts the animation.
 	 */
 	public AnimationViewer() {
@@ -50,9 +50,9 @@ public class AnimationViewer extends JPanel implements ActionListener {
 	}
 
 	/**
-	 * Called by the Swing framework whenever this ictgradschool.industry.lab15.ex01.AnimationViewer object
+	 * Called by the Swing framework whenever this ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer object
 	 * should be repainted. This can happen, for example, after an explicit 
-	 * repaint() call or after the window that contains this ictgradschool.industry.lab15.ex01.AnimationViewer
+	 * repaint() call or after the window that contains this ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer
 	 * object has been exposed after being hidden by another window. 
 	 * 
 	 */
@@ -61,8 +61,8 @@ public class AnimationViewer extends JPanel implements ActionListener {
 		super.paintComponent(g);
 
 
-		// Create a ictgradschool.industry.lab15.ex01.GraphicsPainter that ictgradschool.industry.lab15.ex01.Shape objects will use for drawing.
-		// The ictgradschool.industry.lab15.ex01.GraphicsPainter delegates painting to a basic Graphics object.
+		// Create a ictgradschool.industry.lab_designpatterni.ex01.GraphicsPainter that ictgradschool.industry.lab_designpatterni.ex01.Shape objects will use for drawing.
+		// The ictgradschool.industry.lab_designpatterni.ex01.GraphicsPainter delegates painting to a basic Graphics object.
 		Painter painter = new GraphicsPainter(g);
 		
 		// Draw all shapes
@@ -72,7 +72,7 @@ public class AnimationViewer extends JPanel implements ActionListener {
 	}
 
 	/**
-	 * Notifies this ictgradschool.industry.lab15.ex01.AnimationViewer object of an ActionEvent.
+	 * Notifies this ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer object of an ActionEvent.
 	 */
 	public void actionPerformed(ActionEvent e) {
 
@@ -85,14 +85,14 @@ public class AnimationViewer extends JPanel implements ActionListener {
             s.move(width, height);
         }
 
-        // Request that the ictgradschool.industry.lab15.ex01.AnimationViewer repaints itself. The call to
-        // repaint() will cause the ictgradschool.industry.lab15.ex01.AnimationViewer's paintComponent() to be
+        // Request that the ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer repaints itself. The call to
+        // repaint() will cause the ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer's paintComponent() to be
         // called.
 		repaint();
 	}
 	
 	/**
-	 * Main program method to create an ictgradschool.industry.lab15.ex01.AnimationViewer object and display this
+	 * Main program method to create an ictgradschool.industry.lab_designpatterni.ex01.AnimationViewer object and display this
 	 * within a JFrame window.
 	 */
 	public static void main(String[] args) {
